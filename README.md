@@ -1,2 +1,1 @@
-# PulseMart
-Store Management App
+"PulseStore: Your Business, Simplified"
