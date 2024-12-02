@@ -9,4 +9,4 @@ Welcome to **PulseStore**, a comprehensive solution to streamline your business 
 
 ---
 
-Feel free to explore the repository and check out the documentation for more details about the project. Contributions are welcome!
+Feel free to explore the repository and check out the documentation for more details about the project. Contributions are closed at the moment!
