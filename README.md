@@ -26,20 +26,8 @@ Allow the user to choose whether to proceed as a User or an Admin.
   - **Continue as Admin:** Redirects to the admin login screen.
 
 **Design:**
-```plaintext
-+------------------------------------+
-|          [App Logo]               |
-|          [App Name]               |
-+------------------------------------+
-|                                    |
-|   [Continue as User]               |
-|                                    |
-|   [Continue as Admin]              |
-|                                    |
-+------------------------------------+
-```
 
----
+![Screenshot_20241213-124235](https://github.com/user-attachments/assets/e1b0f7ed-134f-4bba-8d93-55dfabc102b7)
 
 ## 2. Admin Login Page
 **Purpose:**
