@@ -40,20 +40,8 @@ Allow the admin to log in to access the admin panel.
 - **Login Button:** Validates the credentials and redirects to the admin dashboard if correct.
 
 **Design:**
-```plaintext
-+------------------------------------+
-|           Admin Login              |
-+------------------------------------+
-|                                    |
-|   Email/Username: [_____________]  |
-|                                    |
-|   Password:      [_____________]   |
-|                                    |
-|   [Login]                          |
-+------------------------------------+
-```
 
----
+![Screenshot_20241215-154954](https://github.com/user-attachments/assets/636c22b3-efa1-4d4b-ab62-e6fd7453bc91)
 
 ## 3. Admin Dashboard
 **Purpose:**
@@ -65,17 +53,7 @@ Allow the admin to manage products and payments.
   - **Payments:** Redirects to the Payments Page.
 
 **Design:**
-```plaintext
-+------------------------------------+
-|         Admin Dashboard            |
-+------------------------------------+
-|                                    |
-|   [Products]       [Payments]      |
-|                                    |
-+------------------------------------+
-```
-
----
+![Screenshot_20241215-155001](https://github.com/user-attachments/assets/cee59a33-e110-47db-9037-8cb89fd20fda)
 
 ## 4. Products Page
 **Features:**
@@ -91,20 +69,8 @@ Allow the admin to manage products and payments.
     - A Save button to confirm the addition.
 
 **Design:**
-```plaintext
-+------------------------------------+
-|         Products Management        |
-+------------------------------------+
-|   [Add New Product]                |
-|------------------------------------|
-|   Name       | Price    | [Edit]   |
-|------------------------------------|
-|   Product 1  | $10      | [Edit]   |
-|   Product 2  | $20      | [Edit]   |
-|------------------------------------|
-```
+![Screenshot_20241215-155008](https://github.com/user-attachments/assets/97fa4bcc-0d0f-4b3f-8d99-f04162dc2cf5)
 
----
 
 ## 5. Payments Page
 **Features:**
@@ -119,20 +85,8 @@ Allow the admin to manage products and payments.
   - Includes Confirm Order and Cancel Order buttons.
 
 **Design:**
-```plaintext
-+------------------------------------+
-|          Payments Management       |
-+------------------------------------+
-|   Account Number: [______________] |
-|   [Save]                          |
-|------------------------------------|
-|   Orders                          |
-|------------------------------------|
-|   Order 1 | Pending | [View]       |
-|   Order 2 | Done    | [View]       |
-```
+![Screenshot_20241215-155028](https://github.com/user-attachments/assets/65d54779-2be5-4e81-b8a2-ebc9c3fae9cb)
 
----
 
 ## 6. User Login/Registration Page
 **Purpose:**
@@ -155,20 +109,8 @@ Allow users to log in, register, or continue as a guest.
   - A button that allows users to skip login and browse the app.
 
 **Design:**
-```plaintext
-+----------------------------------------+
-|                [App Logo]              |
-+----------------------------------------+
-|  [Username/Email: _____________ ]      |
-|  [Password:        _____________ ]     |
-|                [Login Button]          |
-|----------------------------------------|
-|           [New User? Register]         |
-|      [Continue as Guest Button]        |
-+----------------------------------------+
-```
 
----
+![Screenshot_20241215-154833](https://github.com/user-attachments/assets/f8623115-de11-4f9e-91c7-d84102276c15)
 
 ## 7. Home Page
 **Purpose:**
@@ -199,25 +141,7 @@ Display the products in a scrollable grid layout with product details and cart f
   - Click to open the Cart Drawer.
 
 **Design:**
-```plaintext
-+----------------------------------------+
-| [Cart Icon]  [Product Added to Cart!]  |
-+----------------------------------------+
-|   [Photo]     [Photo]                  |
-|   [Name]      [Name]                   |
-|   [Price]     [Price]                  |
-| [Add to Cart][Add to Cart]             |
-|----------------------------------------|
-|   [Photo]     [Photo]                  |
-|   [Name]      [Name]                   |
-|   [Price]     [Price]                  |
-| [Add to Cart][Add to Cart]             |
-+----------------------------------------+
-|         [Scrollable for more]          |
-+----------------------------------------+
-```
-
----
+![Screenshot_20241215-154916](https://github.com/user-attachments/assets/628f1ff2-cce6-4a26-ade9-34a740dcbe8a)
 
 ## 8. Cart Drawer
 **Purpose:**
@@ -233,18 +157,8 @@ Show products added to the cart and provide a checkout option.
   - Redirects to the Checkout Screen.
 
 **Design:**
-```plaintext
-+----------------------------------------+
-|          Cart Drawer                   |
-+----------------------------------------+
-| Product Name 1       $Price            |
-| Product Name 2       $Price            |
-|----------------------------------------|
-|               [Checkout Button]        |
-+----------------------------------------+
-```
+![Screenshot_20241215-154924](https://github.com/user-attachments/assets/b2bc14a6-0b34-4f39-b50c-b671b4c1899a)
 
----
 
 ## 9. Checkout Screen
 **Purpose:**
@@ -260,18 +174,6 @@ Allow users to complete the payment for their order.
   - Sends the payment details to the admin for confirmation.
 
 **Design:**
-```plaintext
-+----------------------------------------+
-|         Checkout Screen                |
-+----------------------------------------+
-| Pay the amount to the following:       |
-| Account Number: 03XXXXXXXXX            |
-|----------------------------------------|
-| Total Amount: $XX.XX                   |
-|----------------------------------------|
-| Upload Receipt: [Choose File]          |
-| Transaction ID: [_________________]    |
-|----------------------------------------|
-|               [Submit Button]          |
-+----------------------------------------+
+![Screenshot_20241215-154931](https://github.com/user-attachments/assets/bb1cfb94-26c4-4273-a3ba-cec87378c449)
+
 
