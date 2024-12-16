@@ -27,7 +27,7 @@ Allow the user to choose whether to proceed as a User or an Admin.
 
 **Design:**
 
-![Screenshot_20241213-124235](https://github.com/user-attachments/assets/e1b0f7ed-134f-4bba-8d93-55dfabc102b7)
+<img width="320" height="640" alt="studio64_ALHdMz4XHH" src="https://github.com/user-attachments/assets/e1b0f7ed-134f-4bba-8d93-55dfabc102b7">
 
 ## 2. Admin Login Page
 **Purpose:**
@@ -41,7 +41,7 @@ Allow the admin to log in to access the admin panel.
 
 **Design:**
 
-![Screenshot_20241215-154954](https://github.com/user-attachments/assets/636c22b3-efa1-4d4b-ab62-e6fd7453bc91)
+<img width="320" height="640" alt="studio64_ALHdMz4XHH" src="https://github.com/user-attachments/assets/636c22b3-efa1-4d4b-ab62-e6fd7453bc91">
 
 ## 3. Admin Dashboard
 **Purpose:**
@@ -53,7 +53,8 @@ Allow the admin to manage products and payments.
   - **Payments:** Redirects to the Payments Page.
 
 **Design:**
-![Screenshot_20241215-155001](https://github.com/user-attachments/assets/cee59a33-e110-47db-9037-8cb89fd20fda)
+
+<img width="320" height="640" alt="studio64_ALHdMz4XHH" src="https://github.com/user-attachments/assets/cee59a33-e110-47db-9037-8cb89fd20fda">
 
 ## 4. Products Page
 **Features:**
@@ -69,8 +70,8 @@ Allow the admin to manage products and payments.
     - A Save button to confirm the addition.
 
 **Design:**
-![Screenshot_20241215-155008](https://github.com/user-attachments/assets/97fa4bcc-0d0f-4b3f-8d99-f04162dc2cf5)
 
+<img width="320" height="640" alt="studio64_ALHdMz4XHH" src="https://github.com/user-attachments/assets/97fa4bcc-0d0f-4b3f-8d99-f04162dc2cf5">
 
 ## 5. Payments Page
 **Features:**
@@ -85,8 +86,8 @@ Allow the admin to manage products and payments.
   - Includes Confirm Order and Cancel Order buttons.
 
 **Design:**
-![Screenshot_20241215-155028](https://github.com/user-attachments/assets/65d54779-2be5-4e81-b8a2-ebc9c3fae9cb)
 
+<img width="320" height="640" alt="studio64_ALHdMz4XHH" src="https://github.com/user-attachments/assets/65d54779-2be5-4e81-b8a2-ebc9c3fae9cb">
 
 ## 6. User Login/Registration Page
 **Purpose:**
@@ -110,7 +111,7 @@ Allow users to log in, register, or continue as a guest.
 
 **Design:**
 
-![Screenshot_20241215-154833](https://github.com/user-attachments/assets/f8623115-de11-4f9e-91c7-d84102276c15)
+<img width="320" height="640" alt="studio64_ALHdMz4XHH" src="https://github.com/user-attachments/assets/f8623115-de11-4f9e-91c7-d84102276c15">
 
 ## 7. Home Page
 **Purpose:**
@@ -141,7 +142,8 @@ Display the products in a scrollable grid layout with product details and cart f
   - Click to open the Cart Drawer.
 
 **Design:**
-![Screenshot_20241215-154916](https://github.com/user-attachments/assets/628f1ff2-cce6-4a26-ade9-34a740dcbe8a)
+
+<img width="320" height="640" alt="studio64_ALHdMz4XHH" src="https://github.com/user-attachments/assets/628f1ff2-cce6-4a26-ade9-34a740dcbe8a">
 
 ## 8. Cart Drawer
 **Purpose:**
@@ -157,8 +159,8 @@ Show products added to the cart and provide a checkout option.
   - Redirects to the Checkout Screen.
 
 **Design:**
-![Screenshot_20241215-154924](https://github.com/user-attachments/assets/b2bc14a6-0b34-4f39-b50c-b671b4c1899a)
 
+<img width="320" height="640" alt="studio64_ALHdMz4XHH" src="https://github.com/user-attachments/assets/b2bc14a6-0b34-4f39-b50c-b671b4c1899a">
 
 ## 9. Checkout Screen
 **Purpose:**
@@ -174,6 +176,5 @@ Allow users to complete the payment for their order.
   - Sends the payment details to the admin for confirmation.
 
 **Design:**
-![Screenshot_20241215-154931](https://github.com/user-attachments/assets/bb1cfb94-26c4-4273-a3ba-cec87378c449)
 
-
+<img width="320" height="640" alt="studio64_ALHdMz4XHH" src="https://github.com/user-attachments/assets/bb1cfb94-26c4-4273-a3ba-cec87378c449">
