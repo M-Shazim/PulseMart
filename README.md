@@ -3,8 +3,8 @@
 Welcome to **PulseStore**, a comprehensive solution to streamline your business operations and enhance productivity. Our project aims to provide businesses with intuitive tools and features to simplify their processes.
 
 ## Team Members
-- **M Shazim** - SP22-BSE-020
-- **M Jawad** - SP22-BSE-031
+- **M Shazim Nawaz**  - SP22-BSE-020
+- **M Jawad Afzal**   - SP22-BSE-031
 - **Sufyan Abdullah** - SP22-BSE-025
 
 ---
@@ -27,7 +27,8 @@ Allow the user to choose whether to proceed as a User or an Admin.
 
 **Design:**
 
-<img width="320" height="640" alt="studio64_ALHdMz4XHH" src="https://github.com/user-attachments/assets/e1b0f7ed-134f-4bba-8d93-55dfabc102b7">
+<img width="320" height="640" alt="chrome_lwUK3CKjeb" src="https://github.com/user-attachments/assets/4d4018e5-a79e-4c03-8a53-1e18d642ecfe" />
+
 
 ## 2. Admin Login Page
 **Purpose:**
@@ -41,7 +42,7 @@ Allow the admin to log in to access the admin panel.
 
 **Design:**
 
-<img width="320" height="640" alt="studio64_ALHdMz4XHH" src="https://github.com/user-attachments/assets/636c22b3-efa1-4d4b-ab62-e6fd7453bc91">
+<img width="320" height="640" alt="chrome_WL4fQhh8qg" src="https://github.com/user-attachments/assets/ddc26c63-6444-46be-b44f-42f275a534aa" />
 
 ## 3. Admin Dashboard
 **Purpose:**
@@ -54,24 +55,28 @@ Allow the admin to manage products and payments.
 
 **Design:**
 
-<img width="320" height="640" alt="studio64_ALHdMz4XHH" src="https://github.com/user-attachments/assets/cee59a33-e110-47db-9037-8cb89fd20fda">
+<img width="320" height="640" alt="chrome_Acs2pFmiCh" src="https://github.com/user-attachments/assets/2d8962e8-cd02-4f05-9778-476ca2e42ffc" />
 
 ## 4. Products Page
 **Features:**
 - **Listed Products:**
   - Shows existing products in a table or list format.
   - Each product has: Name, Price, Description, Optional Photo, Edit Icon.
+
+**Design:**
+
+<img width="320" height="640" alt="chrome_wuvbposxlV" src="https://github.com/user-attachments/assets/bbf82aff-44a8-4c4b-8e4e-dc03e1b0dfc3" />
+
 - **Add New Product Button:**
-  - Clicking it opens a pop-up form with fields for:
+  - Clicking it opens a page with fields for:
     - Product Name (required).
     - Price (required).
     - Description (required).
-    - Optional Photo (file upload).
     - A Save button to confirm the addition.
 
 **Design:**
 
-<img width="320" height="640" alt="studio64_ALHdMz4XHH" src="https://github.com/user-attachments/assets/97fa4bcc-0d0f-4b3f-8d99-f04162dc2cf5">
+<img width="320" height="640" alt="chrome_rJDNPEnrFL" src="https://github.com/user-attachments/assets/6c601ebf-5c01-447d-b887-bb687e2197d0" />
 
 ## 5. Payments Page
 **Features:**
@@ -80,72 +85,42 @@ Allow the admin to manage products and payments.
 - **Order List:**
   - Displays all orders placed by users.
   - Each order shows: Order ID, User Name, Payment Status (Pending/Completed).
-  - Clicking on an order opens a pop-up with details.
-- **Order Details Pop-Up:**
-  - Shows: Transaction ID, Order details (product names, quantities, total price).
+- **Order Details:**
+  - Shows: Transaction ID, Order details (product names, total price).
   - Includes Confirm Order and Cancel Order buttons.
 
 **Design:**
 
-<img width="320" height="640" alt="studio64_ALHdMz4XHH" src="https://github.com/user-attachments/assets/65d54779-2be5-4e81-b8a2-ebc9c3fae9cb">
+<img width="320" height="640" alt="chrome_Sv5xu9JnfD" src="https://github.com/user-attachments/assets/775ae07a-940c-40c8-b741-c7913a4f5ad5" />
 
-## 6. User Login/Registration Page
-**Purpose:**
-Allow users to log in, register, or continue as a guest.
-
-**Features:**
-- **Login:**
-  - **Fields:**
-    - Username/Email
-    - Password
-  - A Login Button to authenticate and redirect to the Home page.
-- **Register:**
-  - **Fields:**
-    - Full Name
-    - Email
-    - Password
-    - Confirm Password
-  - A Register Button to create an account.
-- **Guest Access:**
+## 6. 
+  - **Guest Access:**
   - A button that allows users to skip login and browse the app.
-
-**Design:**
-
-<img width="320" height="640" alt="studio64_ALHdMz4XHH" src="https://github.com/user-attachments/assets/f8623115-de11-4f9e-91c7-d84102276c15">
 
 ## 7. Home Page
 **Purpose:**
-Display the products in a scrollable grid layout with product details and cart functionality.
+Display the products in a scrollable list layout with product details and cart functionality.
 
 **Features:**
 - **Product Listing:**
-  - **Grid Layout:** 3 Rows x 2 Columns per screen (6 products per page).
-  - Each product block shows:
-    - Photo
+  - **Card Layout:**
+  - Each product card:
     - Name
     - Price
-    - Add to Cart Button
-  - Click on a product block to open a Product Detail Pop-Up.
-- **Product Detail Pop-Up:**
-  - Displays:
-    - Product Photo
-    - Name
-    - Price
-    - Description
     - Add to Cart Button
 - **Cart Notification:**
-  - A temporary notification at the top of the screen:
+  - A temporary notification at the bottom of the screen:
     - Text: “Product added to cart.”
-    - Auto-dismiss after 2 seconds.
+    - Auto-dismiss after 4 seconds.
 - **Cart Icon:**
   - Always visible in the top-right corner of the screen.
-  - Click to open the Cart Drawer.
+  - Click to open the Cart.
 
 **Design:**
 
-<img width="320" height="640" alt="studio64_ALHdMz4XHH" src="https://github.com/user-attachments/assets/628f1ff2-cce6-4a26-ade9-34a740dcbe8a">
+<img width="320" height="640" alt="chrome_ezXPXp230D" src="https://github.com/user-attachments/assets/70ec387d-7a14-4a2d-b2aa-17f197c6faa8" />
 
-## 8. Cart Drawer
+## 8. Cart Page
 **Purpose:**
 Show products added to the cart and provide a checkout option.
 
@@ -154,13 +129,12 @@ Show products added to the cart and provide a checkout option.
   - Each product displays:
     - Name
     - Price
-    - Quantity (optional, can be single quantity only for simplicity).
 - **Checkout Button:**
   - Redirects to the Checkout Screen.
 
 **Design:**
 
-<img width="320" height="640" alt="studio64_ALHdMz4XHH" src="https://github.com/user-attachments/assets/b2bc14a6-0b34-4f39-b50c-b671b4c1899a">
+<img width="320" height="640" alt="chrome_MTZh6hlzv2" src="https://github.com/user-attachments/assets/2c419038-2fa9-4dec-a0e4-5a19823e6e89" />
 
 ## 9. Checkout Screen
 **Purpose:**
@@ -171,10 +145,11 @@ Allow users to complete the payment for their order.
   - Display the Admin's account number or JazzCash/EasyPaisa number.
   - Display the total amount to pay.
 - **Payment Details:**
-  - Input Field to upload a photo of the payment receipt or enter the transaction ID.
+  - Input Field to upload enter the transaction ID.
 - **Submit Button:**
   - Sends the payment details to the admin for confirmation.
 
 **Design:**
 
-<img width="320" height="640" alt="studio64_ALHdMz4XHH" src="https://github.com/user-attachments/assets/bb1cfb94-26c4-4273-a3ba-cec87378c449">
+<img width="320" height="640" alt="chrome_8bBRYGNeWU" src="https://github.com/user-attachments/assets/48dc7729-c105-4bf7-b7f0-c9971070eeee" />
+
