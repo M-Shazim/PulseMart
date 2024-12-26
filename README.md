@@ -13,10 +13,7 @@ Feel free to explore the repository and check out the documentation for more det
 
 # Demo of app
 
-<video autoplay loop style="width:100%; height: auto; position:absolute; z-index: -1;">
-  <source src="https://github.com/user-attachments/assets/826d3801-59aa-47af-877a-fd8b03a30b26" type="video/mp4" />
-</video>
-
+https://github.com/user-attachments/assets/826d3801-59aa-47af-877a-fd8b03a30b26
 
 # Screens Layout and Design Plan
 
