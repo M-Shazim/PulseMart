@@ -1,7 +1,11 @@
+import '/auth/firebase_auth/auth_util.dart';
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:ui';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -25,14 +29,14 @@ class _AddProductPageWidgetState extends State<AddProductPageWidget> {
     super.initState();
     _model = createModel(context, () => AddProductPageModel());
 
-    _model.textController1 ??= TextEditingController();
-    _model.textFieldFocusNode1 ??= FocusNode();
+    _model.productnameTextController ??= TextEditingController();
+    _model.productnameFocusNode ??= FocusNode();
 
-    _model.textController2 ??= TextEditingController();
-    _model.textFieldFocusNode2 ??= FocusNode();
+    _model.productpriceTextController ??= TextEditingController();
+    _model.productpriceFocusNode ??= FocusNode();
 
-    _model.textController3 ??= TextEditingController();
-    _model.textFieldFocusNode3 ??= FocusNode();
+    _model.productdescriptionTextController ??= TextEditingController();
+    _model.productdescriptionFocusNode ??= FocusNode();
   }
 
   @override
@@ -64,7 +68,7 @@ class _AddProductPageWidgetState extends State<AddProductPageWidget> {
               size: 24.0,
             ),
             onPressed: () async {
-              context.safePop();
+              context.pushNamed('AdminDashboard');
             },
           ),
           title: Text(
@@ -115,8 +119,8 @@ class _AddProductPageWidgetState extends State<AddProductPageWidget> {
                                   ),
                             ),
                             TextFormField(
-                              controller: _model.textController1,
-                              focusNode: _model.textFieldFocusNode1,
+                              controller: _model.productnameTextController,
+                              focusNode: _model.productnameFocusNode,
                               autofocus: false,
                               obscureText: false,
                               decoration: InputDecoration(
@@ -173,12 +177,13 @@ class _AddProductPageWidgetState extends State<AddProductPageWidget> {
                                     letterSpacing: 0.0,
                                   ),
                               minLines: 1,
-                              validator: _model.textController1Validator
+                              validator: _model
+                                  .productnameTextControllerValidator
                                   .asValidator(context),
                             ),
                             TextFormField(
-                              controller: _model.textController2,
-                              focusNode: _model.textFieldFocusNode2,
+                              controller: _model.productpriceTextController,
+                              focusNode: _model.productpriceFocusNode,
                               autofocus: false,
                               obscureText: false,
                               decoration: InputDecoration(
@@ -236,12 +241,14 @@ class _AddProductPageWidgetState extends State<AddProductPageWidget> {
                                   ),
                               minLines: 1,
                               keyboardType: TextInputType.number,
-                              validator: _model.textController2Validator
+                              validator: _model
+                                  .productpriceTextControllerValidator
                                   .asValidator(context),
                             ),
                             TextFormField(
-                              controller: _model.textController3,
-                              focusNode: _model.textFieldFocusNode3,
+                              controller:
+                                  _model.productdescriptionTextController,
+                              focusNode: _model.productdescriptionFocusNode,
                               autofocus: false,
                               obscureText: false,
                               decoration: InputDecoration(
@@ -299,7 +306,8 @@ class _AddProductPageWidgetState extends State<AddProductPageWidget> {
                                   ),
                               maxLines: 5,
                               minLines: 3,
-                              validator: _model.textController3Validator
+                              validator: _model
+                                  .productdescriptionTextControllerValidator
                                   .asValidator(context),
                             ),
                             Container(
@@ -382,7 +390,20 @@ class _AddProductPageWidgetState extends State<AddProductPageWidget> {
                             ),
                             FFButtonWidget(
                               onPressed: () async {
-                                context.pushNamed('AdminProductsPage');
+                                await ProductsRecord.collection
+                                    .doc()
+                                    .set(createProductsRecordData(
+                                      name:
+                                          _model.productnameTextController.text,
+                                      description: _model
+                                          .productdescriptionTextController
+                                          .text,
+                                      price: double.tryParse(_model
+                                          .productpriceTextController.text),
+                                    ));
+                                await Future.delayed(
+                                    const Duration(milliseconds: 1000));
+                                context.safePop();
                               },
                               text: 'Save Product',
                               options: FFButtonOptions(

@@ -1,6 +1,8 @@
+import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -24,11 +26,11 @@ class _AdminLoginWidgetState extends State<AdminLoginWidget> {
     super.initState();
     _model = createModel(context, () => AdminLoginModel());
 
-    _model.textController1 ??= TextEditingController();
-    _model.textFieldFocusNode1 ??= FocusNode();
+    _model.adminemailTextController ??= TextEditingController();
+    _model.adminemailFocusNode ??= FocusNode();
 
-    _model.textController2 ??= TextEditingController();
-    _model.textFieldFocusNode2 ??= FocusNode();
+    _model.adminpassowordTextController ??= TextEditingController();
+    _model.adminpassowordFocusNode ??= FocusNode();
   }
 
   @override
@@ -57,7 +59,7 @@ class _AdminLoginWidgetState extends State<AdminLoginWidget> {
             hoverColor: Colors.transparent,
             highlightColor: Colors.transparent,
             onTap: () async {
-              context.safePop();
+              context.pushNamed('HomePage');
             },
             child: Icon(
               Icons.arrow_back,
@@ -131,8 +133,8 @@ class _AdminLoginWidgetState extends State<AdminLoginWidget> {
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 TextFormField(
-                                  controller: _model.textController1,
-                                  focusNode: _model.textFieldFocusNode1,
+                                  controller: _model.adminemailTextController,
+                                  focusNode: _model.adminemailFocusNode,
                                   autofocus: false,
                                   obscureText: false,
                                   decoration: InputDecoration(
@@ -192,14 +194,16 @@ class _AdminLoginWidgetState extends State<AdminLoginWidget> {
                                         letterSpacing: 0.0,
                                       ),
                                   minLines: 1,
-                                  validator: _model.textController1Validator
+                                  validator: _model
+                                      .adminemailTextControllerValidator
                                       .asValidator(context),
                                 ),
                                 TextFormField(
-                                  controller: _model.textController2,
-                                  focusNode: _model.textFieldFocusNode2,
+                                  controller:
+                                      _model.adminpassowordTextController,
+                                  focusNode: _model.adminpassowordFocusNode,
                                   autofocus: false,
-                                  obscureText: !_model.passwordVisibility,
+                                  obscureText: !_model.adminpassowordVisibility,
                                   decoration: InputDecoration(
                                     labelText: 'Password',
                                     labelStyle: FlutterFlowTheme.of(context)
@@ -248,12 +252,12 @@ class _AdminLoginWidgetState extends State<AdminLoginWidget> {
                                         .secondaryBackground,
                                     suffixIcon: InkWell(
                                       onTap: () => safeSetState(
-                                        () => _model.passwordVisibility =
-                                            !_model.passwordVisibility,
+                                        () => _model.adminpassowordVisibility =
+                                            !_model.adminpassowordVisibility,
                                       ),
                                       focusNode: FocusNode(skipTraversal: true),
                                       child: Icon(
-                                        _model.passwordVisibility
+                                        _model.adminpassowordVisibility
                                             ? Icons.visibility_outlined
                                             : Icons.visibility_off_outlined,
                                         size: 22,
@@ -267,14 +271,37 @@ class _AdminLoginWidgetState extends State<AdminLoginWidget> {
                                         letterSpacing: 0.0,
                                       ),
                                   minLines: 1,
-                                  validator: _model.textController2Validator
+                                  validator: _model
+                                      .adminpassowordTextControllerValidator
                                       .asValidator(context),
                                 ),
                               ].divide(SizedBox(height: 16.0)),
                             ),
                             FFButtonWidget(
                               onPressed: () async {
-                                context.pushNamed('AdminDashboard');
+                                GoRouter.of(context).prepareAuthEvent(true);
+
+                                final user = await authManager.signInWithEmail(
+                                  context,
+                                  _model.adminemailTextController.text,
+                                  _model.adminpassowordTextController.text,
+                                );
+                                if (user == null) {
+                                  return;
+                                }
+
+                                if (_model.adminemailTextController.text !=
+                                    currentUserEmail) {
+                                  return;
+                                }
+                                await Future.delayed(
+                                    const Duration(milliseconds: 2000));
+
+                                context.goNamedAuth(
+                                  'AdminDashboard',
+                                  context.mounted,
+                                  ignoreRedirect: true,
+                                );
                               },
                               text: 'Login',
                               options: FFButtonOptions(

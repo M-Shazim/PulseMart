@@ -15,3 +15,5 @@ export '/checkout_screen/checkout_screen_widget.dart' show CheckoutScreenWidget;
 export '/admin/add_product_page/add_product_page_widget.dart'
     show AddProductPageWidget;
 export '/cart_page/cart_page_widget.dart' show CartPageWidget;
+export '/admin/admin_product_edit/admin_product_edit_widget.dart'
+    show AdminProductEditWidget;

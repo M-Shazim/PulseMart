@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "790150981170",
+    "project_id": "pulse-mart-z9xqzf",
+    "storage_bucket": "pulse-mart-z9xqzf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790150981170:android:ad965cd4a96e87a912fe2b",
+        "android_client_info": {
+          "package_name": "com.mycompany.pulsemart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJuiqEbB3Xaz3Vh99MZhDmlnuYg4umxVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
