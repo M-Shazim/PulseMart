@@ -30,7 +30,7 @@ Allow the user to choose whether to proceed as a User or an Admin.
 
 **Design:**
 
-<img width="390" height="780" alt="chrome_lwUK3CKjeb" src="https://github.com/user-attachments/assets/4d4018e5-a79e-4c03-8a53-1e18d642ecfe" />
+<img width="350" height="720" alt="chrome_lwUK3CKjeb" src="https://github.com/user-attachments/assets/4d4018e5-a79e-4c03-8a53-1e18d642ecfe" />
 
 
 ## 2. Admin Login Page
